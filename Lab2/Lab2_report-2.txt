@@ -1,0 +1,62 @@
+Janelynn Camingue --jcamingu@ucsc.edu
+Lab section: 01F MW TA: John Kolar
+Due 10/9/2016
+Lab Partner: None
+
+Title:Lab 2: Adding and Subtracting
+-----------------------------------------------------------------------------------------------------------------
+Purpose:
+The purpose of this lab is to get a feel on using sequential and combinational logic when adding and subtracting a
+sequence of numbers. Also, the purpose was to implement our knowledge from homework one in adding and subtracing 
+numbers to a lab.
+-----------------------------------------------------------------------------------------------------------------
+Procedure:
+For this lab, we were supposed to make each component separately on different pages and test them out in parts to 
+see if all of the components function properly. For part 1, I looked at the attached Starter_Parts and copied and pasted
+the D flip flops that were given to us six times to represent 6 bits even though we only needed 4 bits. For part 2, I 
+copied and pasted the given input/keyboard attached to flip flops from the Starter_Parts. For part 3, I made a full adder
+but it was too complicated, so I tried simplifying it with the Sum of Products. I tested out one to check the logic and 
+used LED lights. I copied one 5 more times to represent 6 bits. I didn't connect the last carryout because of 
+overflow. For part 4, I used 6 2:1 muxes to represent the bits, but I grounded the 2 MSB since we only want 4 bits. To make 
+the inverter, I attached a switch to the full adder and the switch to represent subtraction and addition. Afterwards, I 
+connected everything with signal senders and receivers. I followed the flow chart, so I started to replace the switches
+and LED lights with the receivers and sendres (except for the first page parts because of user input). Since the lab was 
+out of order, I had to draw everything out on a piece of paper as a whole without using signal senders and receivers to 
+see exactly where everything should go. For my logic, I wrote out sentences to make things seem clearer. Since the default
+setting of the switches were 0, I set 0 to addition and 1 to subtraction since we are already used to adding. For 
+subtraction, I used 2's complement because it is just adding one. 
+------------------------------------------------------------------------------------------------------------------
+What Went Wrong Or What Were the Challenges?:
+My challenge was mostly connecting everything. I understood the assignment, but the fact that the components were
+on separate pages and that they were out of order from the chart confused me, which was why I had to draw 
+everything out by hand. Also, my challenge was name choice. I called my 2 MSBs  labels that end with 0 and 1, which
+confused myself because 0 and 1 would be the LSBs for position. I should have switched the names, but I eventually 
+was able to pull through. When I first tested it out after connecting everything, my program would not work properly.
+At first, I kept getting undefined because I did not ground my muxes correctly. I double-checked and realized that the
+ground was set to 1 instead of 0. My next problem was that I kept getting F as a result. I used the tool in the program
+that tells me the output to find the source of the problem. My logic got messed up in the mux because I forgot to set 
+one of receivers for the Key input to inverse and the other one to not inverted. Overall, I believe the main problem was 
+the mux in the end. 
+-----------------------------------------------------------------------------------------------------------------
+Other information (Answer any question(s) posted in the assignment):
+-As I said earlier, the issues in building the circuit were setting up the mux and connecting everything. I redid my
+logic and double-checked everything to fix the problems. The lab was pretty much self-explanatory. Choosing the names 
+by making the first 2 MSBs 0 and 1 instead of 5 and 4 was a mistake. I did not add the optiont to invert in the mux which 
+was why I kept getting F as an output. I used LED lights to debug my problems, which helped because I knew what the 
+problem was right away.
+
+-When I inputted 1-2, I got 3F as a result. 3F is 63 in decimal, but 1-2 in decimal is -1. I think that it is wonky because the 
+program is only for unsigned numbers. 2-3 got C as an output. When I added F+E, I got the haxadeceimal version of 29, which is 
+still correct since F is 15 ans E is 14. 
+------------------------------------------------------------------------------------------------------------------
+Conclusion:
+Messing around with MML was interesting and sometimes stressful. I found out I will probably br using a mouse for the
+next lab. It was easy for me to overthink the assignment, but I eventually figured it out after getting help from the 
+TAs. Part C involved knowledge from CE16 because of the Sum of Products and truth tables, so it was easy. Part D 
+allows the guesser to input their guess using the switches and knowing what the RNG chose with the 2 other LEDs.
+
+EXTRA:
+-------------------------------------------------------------------------------------------------------------------
+The lab would have been better if there was a more in-depth description of what the components do. Also, it would have been
+nicer if the parts were in order.
+

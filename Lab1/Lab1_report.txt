@@ -1,0 +1,52 @@
+Janelynn Camingue --jcamingu@ucsc.edu
+Lab section: 01F MW TA: John Kolar
+Due 9/30/2016
+Lab Partner: None
+
+Title:
+Lab 1: Intro to Logic with Multimedia Logic
+-----------------------------------------------------------------------------------------------------------------
+Purpose:
+The purpose of this lab is to learn how to use MML and get familiar with logic gates and applying the 
+knowledge to the lab.
+-----------------------------------------------------------------------------------------------------------------
+Procedure:
+For the warm up, I used the PDF given to us and followed the instructions. For Part B, I copied exactly how it was
+given to us. For Part C, I took the sum of products and focused on the values that were true. Then, I mapped out the
+design of the circuits using various logic gates. I used the invert, OR, and XOR logic gates. I wrote down the values 
+that I got from the logic gates and tested it out with the LED. For Part D, I wrote down the logic into sentences. If
+the guesser has a matching answer to the RNG, then the third LED will light up. I wrote a bunch of if statements. Since
+the values of the switches are based on user input, I had to come up with different results. I used the AND logic
+for saying that if the guesser and the random number generator have matching answers, then the LED will light up.
+------------------------------------------------------------------------------------------------------------------
+What Went Wrong Or What Were the Challenges?:
+My challenges was mostly from Part D. I was not neat in my work while making the circuits with the program, so I ended
+up getting inverted results. I also forgot to use XNOR. I got used to drawing the plan of the circuit without the dot to
+signiify XNOR that on the program I used XOR and so when my switches were put to 1 and 1 and the
+values of the two LEDs from the RNG were set to 1 and 1, the LED did not light up, but when the switches were set to 0 and
+0, the LED lit up saying that it was right when it should not have. I did not connect the wires fromt the RNG to the XNOR
+and LED lights correctly. A TA had to tell me to clean up my lab, so I labeled and rearranged it. I got lost in keeping 
+track of the wires. 
+-----------------------------------------------------------------------------------------------------------------
+Other information (Answer any question(s) posted in the assignment):
+-If I didn't have a digital display, I would have made one with binary and an LED light. The LED light would represent
+either a 1 or a 0. If the light is on, then the value is 1. If the light is off, then the value is 0. I would have made
+almost exactly like Part D. Although we were instructed to use one LED to see if the guesser was right, having two more
+let me know the values of the RNG, making it easier to check my work.
+
+-I think that the random number generator works by having multiple inputs and outputs. The input must connect to some
+sort of device that will activate the random number generator. I think that the wires are connected in a way that the 
+certain input will correlate with a certain output.
+------------------------------------------------------------------------------------------------------------------
+Conclusion:
+Messing around with MML was interesting and sometimes stressful. I found out I will probably br using a mouse for the
+next lab. It was easy for me to overthink the assignment, but I eventually figured it out after getting help from the 
+TAs. Part C involved knowledge from CE16 because of the Sum of Products and truth tables, so it was easy. Part D 
+allows the guesser to input their guess using the switches and knowing what the RNG chose with the 2 other LEDs.
+
+EXTRA:
+-------------------------------------------------------------------------------------------------------------------
+The lab would have been easier if the professor went over the material when I started it because I started early. Also,
+it would have been better if the instructions for Part D was clearer because I had to ask someone how to get a push-
+button switch. Also, I did not know how to get XNOR until a TA showed me that I needed to double click XOR to get it.
+
